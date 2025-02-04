@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Portfolio">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="Julius Halonen">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Julius Halonen - Portfolio</title>
+        <link id="style" rel="stylesheet" href="./styles.css">
+        <script src="./index.js"></script>
+    </head>
+<body>
+    <header>
+        <div class="header"> <!--Header-->
+            <h1>Julius Halonen</h1>
+
+            <nav><!--Navigation bar and darkmode slider-->
+                <ul>
+                    <li><a href="#top">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li>
+                        <label class="switch">
+                        <input type="checkbox" onclick="toggleDarkMode()">
+                        <span class="slider round"></span>
+                        </label>
+                    </li>
+                </ul>
+            </nav>
+        </div>       
+    </header>
+
+    <section id="about"> <!--About me section-->
+        <h2>About Me</h2>
+        <div class="about_container">
+            <img src="images/meika.png" alt="kuva" class="picture">
+            <p>
+                Hello! I'm Julius Halonen, a computer science student with a passion in cybersecurity.
+                I thrive on problem solving and enjoy the challenges this industry brings.
+                My goal is to contribute to the field of cybersecurity and make a positive impact on society.
+                I am always eager to learn and explore new technologies to stay up-to-date
+                with the latest trends and developments in the field. When I'm not immersed in cyberspace
+                you might find me on the football field or throwing a plastic disc around.
+            </p>
+        </div>
+    </section>
+    
+    <section id="projects"> <!--Projects section-->
+        <div class="container">
+            
+            <h2>Projects</h2>
+
+            <div class="project"> <!--Container for one project-->
+                <h3>Encoder/Decoder</h3>
+                <p><a href="https://github.com/suiluJJ/pythondecoder">Encoder/Decoder</a> software with gui written in python.</p>
+            </div>
+
+            <div class="project">
+                <h3>Relational database app</h3>
+                <p><a href="https://github.com/suiluJJ/databaseproject">Fullstack web app</a> that fetches the data from a relational database.</p>
+            </div>
+
+            <div class="project">
+                <h3>Hash checker</h3>
+                <p><a href="https://github.com/suiluJJ/hash_checker_project">Hash checker</a> web app that utilizes CryptoJS and filereader API to send the md5 checksum of a file to the backend server and request a filereport of said file with virustotal api.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="skills"> <!--Skills section-->
+        <div class="container">
+                
+            <h2>Skills</h2>
+                
+            <ul> <!--skills list-->
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>HTML &amp; CSS</li>
+                <li>Burp Suite</li>
+                <li>Volatility3</li>
+                <li>SQL</li>
+                <li>NodeJS</li>
+            </ul>
+            
+        </div>
+    </section>
+
+    <section id="contact"> <!--Contact section-->
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Feel free to reach out to me via email at <a href="mailto:julius@example.com">julius.halonen1@gmail.com</a></p>
+        </div>
+    </section>
+    <footer> <!--footer-->
+        <div class="footer_container">
+            <a href="https://play.picoctf.org/users/suiluj" class="footer_link">
+                <img alt="pico" src="images/pico.png">
+            </a>
+            <a href="https://tryhackme.com/p/suiluJ" class="footer_link">
+                <img alt="thm" src="images/thm.png">
+            </a>
+            <a href="https://www.hakatemia.fi/u/suiluj" class="footer_link">
+                <img alt="hakatemia" src="images/hakatemia.jpg">
+            </a>
+            <a href="https://github.com/suiluJJ" class="footer_link">
+                <img alt="git" src="images/git.png">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,278 @@
+/* Enables smooth scrolling behavior for the entire page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Styles for the header section */
+header {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #333;
+  width: 100%;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+}
+
+header .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+/* Global styles for the body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+  background-image: url('./images/mountain.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Styles for images with the "picture" class */
+.picture {
+  width: 200px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+/* Styles for the header container */
+.header {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Styles for the about section */
+#about {
+  margin-top: 150px;
+}
+
+/* General styles for sections */
+section {
+  margin-top: 50px;
+}
+
+/* Styles for general containers */
+.container {
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Styles for the about section container */
+.about_container {
+  background-color: rgba(255, 255, 255, 0.6);
+  max-width: 1200px;
+  padding: 10px;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+/* Styles for the about section header */
+#about h2 {
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px;
+  max-width: 1200px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin-top: 180px;
+}
+
+/* Styles for images */
+img {
+  float: left;
+}
+
+/* Styles for the navigation menu */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Styles for section headers */
+section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Styles for project items */
+#projects .project {
+  background: #fafafa;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+#projects .project h3 {
+  margin-top: 0;
+}
+
+/* Styles for the skills section */
+#skills ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+#skills ul li {
+  display: inline-block;
+  margin: 0 10px;
+  background: #eee;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+/* Styles for the contact section */
+#contact p {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+/* Styles for the footer section */
+footer {
+  background: rgba(255, 255, 255, 0.5);
+  color: #333;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 50px;
+}
+
+.footer_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.footer_link img {
+  width: 50px;
+  height: 50px;
+}
+
+.footer_link img:hover {
+  transform: scale(1.1);
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  header .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #about {
+    margin-top: 350px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  #skills ul li {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+/* Styles for toggle switches */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #333;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #ccc;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #ccc;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
